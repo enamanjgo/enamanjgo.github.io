@@ -1,0 +1,98 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+
+  .left {
+    display: flex;
+    position: absolute;
+    flex: 0.4;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      color: snow;
+      font-size: 40px;
+      margin: 10px 0;
+      position: absolute;
+      top: 25%;
+      left: 20%;
+    }
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+
+      img {
+        margin-left: 50px;
+        width: 70%;
+        position: relative;
+        border: black;
+        border-radius: 30% 30% 50% 70%;
+        padding: 30px;
+      }
+    }
+  }
+  .right {
+    position: relative;
+    flex: 0.6;
+    overflow: hidden;
+
+    .wrapper {
+      margin-right: 100px;
+      border-radius: 30% 0% 0% 70%;
+      background-color: rgb(12, 12, 12);
+      padding-left: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 900px;
+      justify-content: center;
+      position: absolute;
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        color: snow;
+        position: relative;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+      }
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      color: white;
+      font-size: 40px;
+      margin-left: 20px;
+    }
+  }
+
+  a {
+    display: flex;
+    margin-top: 100px;
+    position: absolute;
+    left: 48.6%;
+    top: 175%;
+
+    img {
+      margin-top: 30px;
+      width: 40px;
+      height: 25px;
+      animation: arrowBlink 2s infinite;
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

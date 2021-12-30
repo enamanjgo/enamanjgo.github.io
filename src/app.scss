@@ -1,0 +1,49 @@
+.app {
+  height: 100vh;
+
+  .landing-wrapper {
+    z-index: 5;
+    background-size: auto;
+    background-repeat: space repeat;
+    background-position: top left;
+  }
+
+  .sections {
+    background: linear-gradient(-225deg, #9f00bf, #4d4fa7, #9f00bf, #4d4fa7);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: white;
+    position: relative;
+    top: 70px;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    // for firefox
+    //for other browsers
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    //for each
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+  }
+}
